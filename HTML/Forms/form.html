@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="Name">Name</label> 
+            <input type="text" name="name" placeholder="enter a name" autocomplete="on">
+        </div>
+        <div>
+            <label for="UserName">User Name</label> 
+            <input type="text" name="username" placeholder="enter username" value="kishan27" required>
+        </div>
+        <div>
+            <label for="mobnum">Mobile Number</label> 
+            <input type="number" name="num" placeholder="enter mob num" value="8668048875" readonly>
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" placeholder="enter email id" autocomplete="off">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="pswrd" placeholder="enter password">
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" placeholder="enter DOB">
+        </div>
+        <div>
+            <label for="time">Date & Time</label>
+            <input type="datetime-local" name="time" placeholder="enter date &time">
+        </div>
+        <div>
+            <label for="gender">Gender <br>
+             <input type="radio" name="gender">
+             Male <br>
+             <input type="radio" name="gender">
+             Female
+            </label><br>
+        </div>
+        <div>
+            <label for="subjects">Subjects <br>
+                <input type="checkbox" name="html" checked>
+                Html <br>
+                <input type="checkbox" name="css">
+                Css <br>
+                <input type="checkbox" name="js">
+                JS <br>
+            </label>
+        </div>
+        <div>
+            <label for="subjects">Subjects
+                <select name="subjects" id="">
+                    <option value="none">None</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JS">Java Script</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="address"> <b> Address</b> <br>
+                <textarea name="address" id="" cols="90" rows="10" placeholder="enter address" maxlength="100"></textarea>
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET" disabled>
+        </div>
+    </form>
+</body>
+</html>

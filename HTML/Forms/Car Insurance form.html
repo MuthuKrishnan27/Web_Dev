@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Insurance Form</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="gender" >Gender</label>
+                <div>
+                    <input type="radio" name="gender" id="gender_m" required>
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="gender_f" required>
+                    <label for="female">Female</label>
+                </div>
+        </div>
+        <br>
+        <div>
+            <label for="cars">Car Brands</label>
+            <select name="car brands" id="cars">
+                <option value="BMW" id="cars">BMW</option>
+                <option value="Audi" id="cars">Audi</option>
+                <option value="Mercedez" id="cars">Mercedez</option>
+                <option value="choose the option" id="cars" selected disabled>--Please choose an option--</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="carage">Car Age</label>
+            <input type="number" id="carage" style="width: 4%;" placeholder="carage" required>
+        </div>
+        <br>
+        <div>
+            <label for="dop">Date of Purchase</label>
+            <input type="date" id="dop" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="password" required>
+        </div>
+        <br>
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

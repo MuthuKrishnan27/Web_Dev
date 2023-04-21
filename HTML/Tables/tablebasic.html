@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, th, td {
+            border : 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption style="color: blue;">Table</caption>
+        <tr>
+            <th colspan="2">Score</th>
+            <th>Amount</th>
+        </tr>
+        <tr style="color: red">
+            <td rowspan="3">1000</td>
+            <td>min</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td rowspan="2">max</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+        </tr>
+    </table>
+</body>
+</html>
