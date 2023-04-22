@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .middle{
+        margin: auto;
+        width: 60%;
+        }
+
+        .center{
+        text-align: center;
+        }
+
+        .right{
+        text-align: right;
+        }
+
+    table{
+    border: 1px solid black;
+    border-spacing: 1px;
+    }
+
+    td{
+        padding: 1px;
+        border: 1px solid black;
+        }
+
+    .green{
+        background-color: green;
+    }
+
+    .blue{
+        background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <table style="border: 1px black; width: 100%;" id="table-1" class="middle">
+        <caption style="text-align: center;"><b>HTML Assignment #3</b></caption>
+        <tr style="border: 1px black;">
+            <td id="t11">left</td>
+            <td class="center" id="t12">center</td>
+            <td class="right" id="t13">right</td>
+        </tr>
+        <tr style="border: 1px black;">
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+        <tr style="border: 1px black;">
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+    </table>
+    </div>
+
+    <div>
+    <table style="width: 100%;height: 100%; border-collapse: collapse;" id="table-2" class="middle">
+        <tr>
+            <td colspan="6" id="t21"> </td>
+        </tr>
+        <tr>
+            <td rowspan="4"> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr> 
+            <td> </td>
+            <td colspan="3" rowspan="2"> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td colspan="6"> </td>
+        </tr>
+    </table>
+    </div>
+
+    <div>
+        <table id="table-3" style="width: 100%;" class="middle">
+            <tr>
+               <td class="green"></td> 
+            </tr>
+            <tr>
+                <td id="t-image"> <img src="https://img.freepik.com/free-vector/golden-bird-logo-design_1195-336.jpg?w=2000" alt="logo" width="100px" height="60px"></td>
+            </tr>
+            <tr>
+                <td class="blue"> </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
