@@ -1,0 +1,19 @@
+.d:nth-child(odd) {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 1px solid black;
+}
+.d:nth-child(even){
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+    border: 1px dotted black;
+}
+.d:hover {
+    background-color: green;
+}
+div{
+    color: red!important;
+    color:blue
+}

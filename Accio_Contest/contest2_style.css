@@ -1,5 +1,5 @@
 .sticky{
-    position: sticky;
+    position: fixed;
         width: 1728px;
         height: 86px;
         left: 0px;
@@ -89,13 +89,15 @@ nav a:hover{
     
         color: #000000;
 }
+body{
+    background-color: #000000;
+}
 article {
     position: static;
     top: 78px;
     left: 0px;
     width: 1728px;
     height: 2305px;
-    background: black;
 }
 #starthead{
     position: absolute;
