@@ -59,3 +59,17 @@
 //     var x=10;
 // }
 // demo();
+
+// Strings 
+// var str = "Mathematics";
+// console.log(str.slice(3));
+
+let n = 12321;
+let t=n;
+let res=0;
+while(t!=0){
+    let rem = t%10;
+    res=(res*10)+rem;
+    t=parseInt(t/10);
+}
+console.log(res);

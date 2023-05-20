@@ -1,0 +1,225 @@
+body{
+    padding: 0;
+    margin: 20px;
+    background-color: black;
+    color:black;
+    font-family: 'Inter', sans-serif;
+}
+
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #8F8868;
+    padding:2px;
+    border-radius:30px ;
+
+}
+button{
+    padding: 20px 50px;
+    border-radius: 30px;
+    background-color:#1A1C19;
+    color: white;
+    margin: 5px;
+    border:1px solid #8F8868;
+
+
+}
+
+.fbtn{
+    width: 400px;
+    background-color: #343124;
+    
+}
+
+
+.container{
+    
+    background-color: black;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 5fr,1fr,1fr);
+    gap: 15px;
+    
+}
+
+.container div{
+    border-radius: 25px;
+}
+
+
+.gr1 p{
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 20px;
+
+}
+
+
+.gr1{
+    padding: 20px;
+    background-color: #E0D6C2;
+    grid-row: 1/3;
+    align-content: center;
+   
+}
+
+.gr2{
+
+    
+    padding: 10px;
+    background-color: #8F8868;
+    grid-column: 2/4;
+    
+    
+}
+.gr3{
+    padding: 10px;
+    background-color: #976C54;
+    
+}
+.gr4{
+    padding: 20px;
+    background-color: #B5A38D;
+
+}
+
+
+.gr1 img{
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    
+}
+.gr2 img{
+    width: 100%;
+    height: 1000%;
+    transition: all 2s;
+
+    
+}
+.gr3 .gr3imgcont img{
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+    
+
+}
+.gr4 img{
+    width: 100%;
+    transition: all 2s;
+
+}
+
+
+.get{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.get span{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.man{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+.gr2imgcont{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;padding: 10px;
+    
+
+
+}
+
+.gr3imgcont{
+    padding: 10px;
+}
+
+.gr4imgcont{
+    padding: 10px;
+}
+
+
+
+.container .gr1:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.container .gr2:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.container .gr3imgcont:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.container .gr4:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+/* device support responsive*/
+@media (max-width: 1125px){
+ 
+    nav .coll{
+       display: none;
+    }
+  
+}
+@media (max-width: 950px){
+    .eve{
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .right{
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px){
+    .fbtn{
+        height: auto;
+        width: auto;
+        
+    }
+}
+@media (max-width:600px){
+    .fbtn{
+        height: auto;
+        width: auto;
+        
+    }
+}
+
+
+
+@media(max-width:710px){
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

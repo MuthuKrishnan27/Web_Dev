@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Management</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h2>User Management</h2>
+
+  <div>
+    <label for="profession">Profession:</label>
+    <select id="profession">
+      <option value="">Select profession</option>
+      <option value="developer">Developer</option>
+      <option value="admin">Admin</option>
+    </select>
+
+    <button id="filterBtn">Filter</button>
+  </div>
+
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+
+    <label for="professionInput">Profession:</label>
+    <input type="text" id="professionInput">
+
+    <label for="age">Age:</label>
+    <input type="number" id="age">
+
+    <button id="addBtn">Add User</button>
+  </div>
+
+  <div id="userList">
+    <!-- Users will be dynamically added here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
