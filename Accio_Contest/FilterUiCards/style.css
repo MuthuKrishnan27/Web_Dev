@@ -37,8 +37,11 @@ button{
     justify-content: space-evenly;
     padding: 10px;
     border: 2px solid greenyellow;
-    margin: 10px auto;
+    border-radius: 4px;
 }
 #container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 10px;
 }

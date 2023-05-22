@@ -36,7 +36,7 @@ function addNewUser(){
     let name = document.getElementById("name").value.trim();
     let profession = document.getElementById("profession").value.trim();
     let age = document.getElementById("age").value.trim();
-  
+    
     if(name!=="" && profession!=="" && age!==""){
       let newUser = {
         id: users[users.length-1].id+1,
