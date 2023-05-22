@@ -6,48 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filter UI Cards</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <div class="container">
-        <p>Filter Ui Cards via their profession</p>
-        <div>
-            <!-- <label for="profession">Profession:</label> -->
-            <select id="profession">
-           
-              <option value="" disabled selected>Profession</option>
-              <option value="developer">Developer</option>
-              <option value="admin">Admin</option>
-           
-            </select>
-           
-            <div id="user-container">
+    <p>Filter ui cards via their profession</p>
+  
+    <select name="profession">
+      <option value="" selected>Profession</option>
+      <option value="developer">Developer</option>
+      <option value="admin">Admin</option>
+    </select>
+    <br>
 
-            </div>
-           
-            <button id="filterBtn" onclick="filterCards()">Filter</button>
-          
-        </div>
+    <button id="filterbtn" onclick="filterUsers()">Filter</button>
 
-          <p>Add a new user</p>
-
-          <div class="label-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-        
-            <label for="professionInput">Profession:</label>
-            <input type="text" id="professionInput">
-        
-            <label for="age">Age:</label>
-            <input type="number" id="age">
-            
-            <div class="adduser">
-                <button id="addBtn" onclick="addUser()">Add User</button>
-            </div>
-            
-          </div>
+    <div id="container">
+        <!-- <div class="user">
+          <div>1</div>
+          <div>Name: John</div>
+          <div>Profession: Developer</div>
+          <div>Age: 22</div>
+        </div> -->
     </div>
-
+   
+    <p>Add a new User</p>
+   
+    <div class="form">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" >
+      </div>
+      <div>
+        <label for="profession">Enter Profession</label>
+        <input type="text" name="profession" id="profession">
+      </div>
+      <div>
+        <label for="age">Enter Age</label>
+        <input type="number" name="age" id="age">
+      </div>
+    </div>
+   
+    <button id="adduser" onclick="addNewUser()">Add User</button>
    
     <script src="./script.js"></script>
 </body>

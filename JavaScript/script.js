@@ -1,13 +1,14 @@
-// alert("Alert!!!");
-// var a = prompt("a: ");
-// ans = function oddeven(a){
-//     if(a%2===0){
-//         return "even"
-//     }
-//     else{
-//         return "odd"
-//     }
-// }
+alert("Alert!!!");
+var a = prompt("a: ");
+let ans = (a) => {
+    if(a%2===0){
+        return "even"
+    }
+    else{
+        return "odd"
+    }
+}
+console.log(ans(a));
 
 // console.log(ans(a)); 
 
@@ -64,12 +65,27 @@
 // var str = "Mathematics";
 // console.log(str.slice(3));
 
-let n = 12321;
-let t=n;
-let res=0;
-while(t!=0){
-    let rem = t%10;
-    res=(res*10)+rem;
-    t=parseInt(t/10);
-}
-console.log(res);
+// let n = 12321;
+// let t=n;
+// let res=0;
+// while(t!=0){
+//     let rem = t%10;
+//     res=(res*10)+rem;
+//     t=parseInt(t/10);
+// }
+// console.log(res);
+
+// let res = () => {
+//     var a = 10;
+// }
+
+// res();
+
+// console.log(a);
+
+// let a = 10;
+// function name(){
+//   var a = 20;
+// }
+// console.log(a);
+// name();

@@ -1,25 +1,44 @@
-#user-container{
-    padding: 10px;
+body{
+    background-color: black;
+    color : white;
+    font-family: 'Inter', sans-serif;
+    margin: 10px 20px;
+    font-size: large;
+}
+select, input{
+    background-color: black;
+    border-color: white;
+    border-width: 0.5px;
+    color: white;
+    font-size: large;
+    }
+button{
+    margin:10px 0;
+    padding: 5px 10px;
     border-radius: 5px;
+    width: 100px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color:azure;
+}
+.form {
+    display: flex;
+    justify-content:stretch;
+    font-size: large;
+}
+.form div{
+    margin-right: 20px;
 }
 
 .user{
-    display: inline-block;
-    width: 45%;
-    color:black;
-    border-radius: 5px;
     display: flex;
-    margin: 10px;
-    border: 2px solid black;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    border: 2px solid greenyellow;
+    margin: 10px auto;
 }
-
-/* .tab{
-    margin:auto 10px;
-} */
-
-.adduser,.label-form{
-    margin-top:20px;
+#container{
+    padding: 10px;
 }
