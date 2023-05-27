@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        .img-responsive{
+            width: 50%;
+            height: auto;
+        }
+    </style> -->
+    <!-- <style>
+        .container {
+          position: fixed;
+          width: 98%;
+          height: 95vh;
+          border: 1px solid black;
+        }
+      
+        .static-box {
+          position: static;
+          width:80px;
+          height: 80px;
+          background-color: blue;
+        }
+      
+        .relative-box {
+          position: relative;
+          left:75vw;
+          top:63vh;
+          width:80px;
+          height: 80px;
+          background-color: red;
+        }
+      
+        .absolute-box {
+          position: absolute;
+          left:76%;
+          top:1em;
+          width:80px;
+          height: 80px;
+          background-color: orchid;
+        }
+      
+        .fixed-box {
+          position: fixed;
+          width:80px;
+          height: 80px;
+          background-color: yellow;
+        }
+      
+        .sticky-box {
+          position: sticky;
+          top:80vh;
+          width:80px;
+          height: 80px;
+          background-color: green;
+        }
+      </style> -->
+      <!-- <style>
+        .container{
+            position:relative;
+            width:50vw;
+            height:50vh;
+            border: 3px solid brown;
+        }
+        .box {
+          width: 40px;
+          height: 40px;
+          background-color: #131313ee;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      </style> -->
+      <style>
+        /* .spinner {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          border: 4px solid #ccc;
+          border-top-color: #333;
+          border-bottom-color: blue;
+          animation: test 4s ease-in-out infinite;
+        }
+        
+        @keyframes test {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        } */
+        .container{
+            width: 80%;
+            border: 3px solid brown;
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            grid-gap: 5px;
+            grid-template-rows: repeat(2,auto);
+            justify-content: space-between;
+            justify-items: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .item{
+            /* width:100%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+        }
+        .img{
+            width: 80px;
+            height: 80px;
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 845px) {
+            .container{
+                width: 80%;
+                display: grid;
+                grid-template-columns: repeat(2,auto);
+                grid-gap: 5px;
+                justify-content: space-around;
+                padding: 20px;
+            }
+            .img{
+            width: 100%;
+        }
+        }
+
+        @media  screen and (max-width: 500px) {
+            .container{
+                width: 80%;
+                display: grid;
+                grid-template-columns: repeat(1,auto);
+                grid-gap: 5px;
+                justify-content:stretch;
+                justify-content: 2px;
+            }
+            .item{
+            width:100%;
+            display: flex;
+            justify-content:stretch;
+            align-items: center;
+            border: 2px solid red;
+        }
+        .img{
+            width: 100%;
+        }
+        }
+      </style>
+
+      <div class="container">
+        <div class="item"><img class="img" src="../../utils/background.jpg" alt="background"></div>
+        <div class="item"><img class="img" src="../../utils/background.jpg" alt="background"></div>
+        <div class="item"><img class="img" src="../../utils/background.jpg" alt="background"></div>
+        <div class="item"><img class="img" src="../../utils/background.jpg" alt="background"></div>
+        <div class="item"><img class="img" src="../../utils/background.jpg" alt="background"></div>
+        <div class="item"><img class="img" src="../../utils/background.jpg" alt="background"></div>
+        <div class="item"><img class="img" src="../../utils/background.jpg" alt="background"></div>
+        <div class="item"><img class="img" src="../../utils/background.jpg" alt="background"></div>
+      </div>
+</head>
+<body>
+    <!-- <img class="img-responsive"src="../../utils/jeff 1.jpg" alt="jefbezoz">
+    <form action="" method="">
+    <input type="text">
+    <input type="text">
+    </form>
+    <button type="submit" onclick="submit()">submit</button>
+    <script>
+        submit = ()=> {
+            alert("Submitted");
+            console.log("submitted");
+        }
+    </script> -->
+    <!-- <div class="container">
+        <div class="static-box">Static</div>
+        <div class="relative-box">Relative</div>
+        <div class="absolute-box">Absolute</div>
+        <div class="fixed-box">Fixed</div>
+        <div class="sticky-box">Sticky</div>
+      </div> -->
+      <!-- <img class="img-responsive"src="../../utils/jeff 1.jpg" alt="jefbezoz"> 
+    <form action="" method="">
+    <input type="text">
+    <input type="text">
+    </form>  -->
+    <!-- <div class="container">
+        <div class="box"></div>
+    </div>
+    -->
+    <div class="spinner"></div>
+</body>
+</html>

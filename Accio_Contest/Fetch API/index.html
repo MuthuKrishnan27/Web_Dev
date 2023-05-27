@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coin Market Data</title>
+    <style>
+      body {
+        color: white;
+        background-color: #0e0e0e;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        color: white;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #0e0e0e;
+      }
+
+      input[type="text"] {
+        margin-bottom: 10px;
+        color: white;
+        background-color: #0e0e0e;
+      }
+      button{
+        color: rgb(232, 225, 225);
+        background-color: #0e0e0e;
+        border: 1px solid whitesmoke;
+        box-shadow:  rgb(245, 243, 243);
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <button id="sortMarketCapButton">Sort by Market Cap</button>
+    <button id="sortPercentageButton">Sort by Percentage</button>
+    <table id="coinTable">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Symbol</th>
+          <th>Current Price</th>
+          <th>Total Volume</th>
+          <th>Market Cap</th>
+          <th>Percentage Change</th>
+        </tr>
+      </thead>
+      <tbody id="coinTableBody"></tbody>
+    </table>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

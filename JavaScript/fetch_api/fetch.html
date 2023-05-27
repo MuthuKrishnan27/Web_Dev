@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch postal api</title>
+</head>
+<body>
+
+    <input type="text" id="input">
+    <button onclick="search()">Search</button>
+    <div id="places">
+    </div>
+    <script>
+        let input = document.getElementById("input");
+        function search(){
+            let pincode = input.value;
+            let response = fetch(`https://api.postalpincode.in/pincode/${pincode}`);
+
+            response.then((data)=>{
+                let prom = data.json();
+                prom.then((finalData)=>{
+                    appendOnWebpage(finalData[0].PostOffice);
+                })
+                prom.catch((error)=>{
+                    alert("Something went wrong");
+                })
+            })
+
+            response.catch((data)=>{
+                alert("Error");
+            })
+    }
+       
+        let placescontainer = document.getElementById("places");
+
+        function appendOnWebpage(arr){
+            placescontainer.innerHTML='';
+            for(let i =0;i<arr.length;i++){
+                let div = document.createElement("div");
+                div.innerText = arr[i].Name;
+                placescontainer.append(div);
+            }
+        }
+    </script>
+</body>
+</html>
