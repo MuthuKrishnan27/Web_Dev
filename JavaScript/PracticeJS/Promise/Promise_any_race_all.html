@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let prom1 = new Promise((resolve, reject) => {
+            setTimeout(()=>resolve("Promise 1 resolved"),4000);
+        });
+        let prom2 = new Promise((resolve,reject)=>{
+            setTimeout(()=>resolve("Promise 2 resolved"),2000);
+        });
+
+        // any
+        let prom3 = Promise.any([prom1,prom2]);
+        prom3.then((value)=>{
+            console.log("prom3 any",value);
+        });
+        prom3.catch((error)=>{
+            console.log(error);
+        });
+
+        // allSettled
+        let prom4 = Promise.allSettled([prom1,prom2]);
+        prom4.then((value)=>{
+            console.log("prom4 allSettled",value);
+        })
+        prom4.catch((error)=>{
+            console.log(error);
+        });
+        
+        console.log(prom4);
+
+        // all
+        let prom5 = Promise.all([prom1,prom2]);
+        prom5.then((value)=>{
+            console.log("prom5 all",value);
+        });
+        prom5.catch((error)=>{
+            console.log(error);
+        });
+
+        // race
+        let prom6 = Promise.race([prom1,prom2]);
+        prom6.then((value)=>{
+            console.log("prom6 race",value);
+        });
+        prom6.catch((error)=>{
+            console.log(error);
+        });
+    </script>
+</body>
+</html>

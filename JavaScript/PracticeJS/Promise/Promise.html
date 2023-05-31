@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+
+    </div>
+    <script>
+      // let executor = (resolve,reject)=>{
+      //     reject("Hello World");
+      // }
+    
+      // function func(){
+      //   console.log(0);
+      // }
+      // setTimeout(func,8000);
+      // let prom = new Promise((resolve, reject) => {
+      //   setTimeout(()=>{
+      //       resolve("Hello World");
+      //   },8000);
+      // });
+      // console.log(prom);
+      
+      // setTimeout(() => {          // Call back Queue           Low piority
+      //   console.log(1);
+      // }, 4000);
+     
+      // prom.then((data) => {       // Microtask Queue             high piority
+      //   let div = document.getElementById("container");
+      //   let h1 = document.createElement("h1");
+      //   h1.id = "output";
+      //   h1.innerText = data;
+      //   container.append(h1);
+      //   console.log(data);
+      // });
+      
+      // prom.catch((error) => {
+      //   console.log(error);
+      // });
+
+    
+     async function name(){
+      let prom = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+          resolve("value");
+        },2000);
+      });
+      //  console.log(prom);
+      //  console.log(10);
+       return await prom;
+     };
+
+     let prom1 = name();
+     console.log(prom1);
+    
+     name().then(function(value){
+      console.log(value);
+     });
+    //  name().catch((error)=>{
+    //   console.log(error);
+    //  })
+    </script>
+  </body>
+</html>

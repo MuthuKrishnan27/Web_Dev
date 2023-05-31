@@ -168,3 +168,56 @@
 
 // console.log(letterCombinations("999"));
 
+// MCQ
+// {
+//   let msg = "hello";
+//   console.log(msg);
+// }
+// console.log(msg);
+
+// var scope = "js scope";
+// let a = function p(){
+//   var scope = "sc";
+//   function ch(){
+//     return scope;
+//   }
+//   return ch();
+// };
+// console.log(a());
+
+// function greeting(){
+//   throw 'Hello World!';
+// }
+// function hi(){
+//   try{
+//     let data = greeting();
+//     console.log('It worked',data);
+//   }
+//   catch(error){
+//     console.log('oh no ',error);
+//   }
+// }
+// hi();
+
+// function greet(user){
+//   var user = "dear "+user;
+//   return function(greeting="hello! "){
+//     console.log(greeting+user);
+//   }
+// }
+
+// var hello = greet("saloni");
+// hello();
+function volume_sphere() {
+  //Write your code here
+  let r = document.getElementById("radius").value;
+  let volume = document.getElementById("volume");
+  let data = (4/3)*(3.14)*r*r*r;
+  let span = document.createElement("span");
+  span.innerText = data;
+  volume.appendChild(span);
+  console.log(span);
+} 
+// let submit = document.getElementById("submit");
+// submit.addEventListener("click",volume_sphere);
+// window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
