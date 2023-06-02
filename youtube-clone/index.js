@@ -99,6 +99,6 @@ function navigateToVideo(videoItem){
     linkItem.click();
   }
   else {
-    alert("Go and watch in youtube")
+    alert("Oops!!! This video has no access to play ): , Please watch it in Youtube");
   }
 }
