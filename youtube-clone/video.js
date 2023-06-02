@@ -22,13 +22,11 @@ async function channelInfo(){
     try{
         let response = await fetch(endpoint);
         let result = await response.json();
-        console.log(result);
-        if(result.items[0]!==undefined){
-            channel = result.items[0];
-            channelLogoUrl = channel.snippet.thumbnails.high.url;
-            subscriberCount = channel.statistics.subscriberCount;
-            subscriberCount = getSubCount(subscriberCount);
-        }
+        console.log(result);      
+        channel = result.items[0];
+        channelLogoUrl = channel.snippet.thumbnails.high.url;
+        subscriberCount = channel.statistics.subscriberCount;
+        subscriberCount = getSubCount(subscriberCount);
     }
     catch(error){
         console.log(`Error occured`, error)
