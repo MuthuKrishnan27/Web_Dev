@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <div id="output"></div>
+    <!-- <script>
+
         let prom1 = new Promise((resolve, reject) => {
             setTimeout(()=>resolve("Promise 1 resolved"),4000);
         });
@@ -52,6 +54,47 @@
         prom6.catch((error)=>{
             console.log(error);
         });
+    </script> -->
+    <script>
+        let prom1  = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("Prom1 resolved");
+            },2000);
+        });
+
+        let prom2  = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("Prom2 resolved");
+            },5000);
+        });
+
+        let prom3  = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("Prom3 resolved");
+            },1000);
+        });
+
+        let prom4  = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("Prom4 resolved");
+            },4000);
+        });
+
+        let prom5  = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("Prom5 resolved");
+            },3000);
+        });
+
+        window.promises = Promise.any([prom1,prom2,prom3,prom4,prom5]);
+        let output = document.getElementById("output");
+        console.log(window.promises);
+        let arr = promises;
+        console.log(arr);
+        output.innerText = arr;
+// Do not change the code above this
+// add your promises to the array `promises`
+
     </script>
 </body>
 </html>
