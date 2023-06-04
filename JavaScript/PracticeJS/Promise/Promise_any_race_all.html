@@ -8,54 +8,55 @@
 </head>
 <body>
     <div id="output"></div>
-    <!-- <script>
-
-        let prom1 = new Promise((resolve, reject) => {
-            setTimeout(()=>resolve("Promise 1 resolved"),4000);
-        });
-        let prom2 = new Promise((resolve,reject)=>{
-            setTimeout(()=>resolve("Promise 2 resolved"),2000);
-        });
-
-        // any
-        let prom3 = Promise.any([prom1,prom2]);
-        prom3.then((value)=>{
-            console.log("prom3 any",value);
-        });
-        prom3.catch((error)=>{
-            console.log(error);
-        });
-
-        // allSettled
-        let prom4 = Promise.allSettled([prom1,prom2]);
-        prom4.then((value)=>{
-            console.log("prom4 allSettled",value);
-        })
-        prom4.catch((error)=>{
-            console.log(error);
-        });
-        
-        console.log(prom4);
-
-        // all
-        let prom5 = Promise.all([prom1,prom2]);
-        prom5.then((value)=>{
-            console.log("prom5 all",value);
-        });
-        prom5.catch((error)=>{
-            console.log(error);
-        });
-
-        // race
-        let prom6 = Promise.race([prom1,prom2]);
-        prom6.then((value)=>{
-            console.log("prom6 race",value);
-        });
-        prom6.catch((error)=>{
-            console.log(error);
-        });
-    </script> -->
     <script>
+
+    //     let prom1 = new Promise((resolve, reject) => {
+    //         setTimeout(()=>resolve("Promise 1 resolved"),4000);
+    //     });
+    //     let prom2 = new Promise((resolve,reject)=>{
+    //         setTimeout(()=>resolve("Promise 2 resolved"),2000);
+    //     });
+
+    //     // any
+    //     let prom3 = Promise.any([prom1,prom2]);
+    //     prom3.then((value)=>{
+    //         console.log("prom3 any",value);
+    //     });
+    //     prom3.catch((error)=>{
+    //         console.log(error);
+    //     });
+
+    //     // allSettled
+    //     let prom4 = Promise.allSettled([prom1,prom2]);
+    //     prom4.then((value)=>{
+    //         console.log("prom4 allSettled",value);
+    //     })
+    //     prom4.catch((error)=>{
+    //         console.log(error);
+    //     });
+        
+    //     console.log(prom4);
+
+    //     // all
+    //     let prom5 = Promise.all([prom1,prom2]);
+    //     prom5.then((value)=>{
+    //         console.log("prom5 all",value);
+    //     });
+    //     prom5.catch((error)=>{
+    //         console.log(error);
+    //     });
+
+    //     // race
+    //     let prom6 = Promise.race([prom1,prom2]);
+    //     prom6.then((value)=>{
+    //         console.log("prom6 race",value);
+    //     });
+    //     prom6.catch((error)=>{
+    //         console.log(error);
+    //     });
+    //</script> 
+    
+    <!-- <script>
         let prom1  = new Promise((resolve,reject)=>{
             setTimeout(()=>{
                 resolve("Prom1 resolved");
@@ -89,12 +90,20 @@
         window.promises = Promise.any([prom1,prom2,prom3,prom4,prom5]);
         let output = document.getElementById("output");
         console.log(window.promises);
-        let arr = promises;
+        let arr = promises.then((msg)=>{
+            return msg;
+        });
         console.log(arr);
-        output.innerText = arr;
-// Do not change the code above this
-// add your promises to the array `promises`
-
-    </script>
+        output.innerText = arr; -->
+<!-- // Do not change the code above this
+// add your promises to the array `promises` -->
+        <!-- let prom3 = Promise.any([prom1,prom2]);
+        prom3.then((value)=>{
+            console.log("prom3 any",value);
+        });
+        prom3.catch((error)=>{
+            console.log(error);
+        });
+    </script> -->
 </body>
 </html>
