@@ -208,16 +208,102 @@
 
 // var hello = greet("saloni");
 // hello();
-function volume_sphere() {
-  //Write your code here
-  let r = document.getElementById("radius").value;
-  let volume = document.getElementById("volume");
-  let data = (4/3)*(3.14)*r*r*r;
-  let span = document.createElement("span");
-  span.innerText = data;
-  volume.appendChild(span);
-  console.log(span);
-} 
-// let submit = document.getElementById("submit");
-// submit.addEventListener("click",volume_sphere);
-// window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+// function volume_sphere() {
+//   //Write your code here
+//   let r = document.getElementById("radius").value;
+//   let volume = document.getElementById("volume");
+//   let data = (4/3)*(3.14)*r*r*r;
+//   let span = document.createElement("span");
+//   span.innerText = data;
+//   volume.appendChild(span);
+//   console.log(span);
+// } 
+// // let submit = document.getElementById("submit");
+// // submit.addEventListener("click",volume_sphere);
+// // window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+
+// let str1 = "apple";
+// let str2 = "banana";
+// let comparison = str2.localeCompare(str1); // -1
+// arr = [str2,str1];
+// console.log(arr);
+// arr.sort();
+// console.log(arr);
+// console.log(comparison);
+
+// str = ["cit","banan","zyathe","apile","ghpy"];
+// // console.log(str);
+// // let arr =[];
+// // for(let i=0;i<str.length-1;i++){
+// //   let j = str[i].localeCompare(str[i+1]);
+// //   arr.push(j);
+// // };
+// // console.log(arr);
+
+// let str2 = str.splice(0,3);
+// let str1 = str.slice(2,3);
+// console.log("str1= ",str1," str2= ",str2);
+
+// const lookup = {
+//   'A': 'N', 'B': 'O', 'C': 'P', 'D': 'Q',
+//   'E': 'R', 'F': 'S', 'G': 'T', 'H': 'U',
+//   'I': 'V', 'J': 'W', 'K': 'X', 'L': 'Y',
+//   'M': 'Z', 'N': 'A', 'O': 'B', 'P': 'C',
+//   'Q': 'D', 'R': 'E', 'S': 'F', 'T': 'G',
+//   'U': 'H', 'V': 'I', 'W': 'J', 'X': 'K',
+//   'Y': 'L', 'Z': 'M', '?': '?', ',': ','
+// };
+// function encode(inputString){
+//   let decoderArr = [];
+//   for(let i = 0 ; i < inputString.length ; i++) {
+//       if(lookup[ inputString.charAt(i) ] === undefined){
+//           decoderArr.push( inputString.charAt(i) ) ;
+//       }   
+//       else{ 
+//           decoderArr.push(lookup[ inputString.charAt(i) ]);
+//       }
+//   }
+//   return decoderArr
+// };
+
+// console.log(encode("#AEI"));
+
+// str = "#abcde";
+// arr = [];
+// for(let i=0;i<str.length;i++){
+//   arr.push(str[i]);
+// };
+// console.log(arr);
+let arr = [5, 3] ;
+// function reduce(callback, intialValue) {
+//     // initialValue = undefined
+//     let sum ;
+//     let intialIndex ;
+//     if(intialValue === undefined){
+//         sum = arr[0];
+//         intialIndex = 1 ;
+//     }
+//     else{
+//         sum = intialValue;
+//         intialIndex = 0 ;
+//     }
+//     // sum = 10 = 15 = 19
+//     for(let i = intialIndex ; i < arr.length; i++) {
+//         sum = callback(sum, arr[i], i); 
+//         // 15 = callback(10, 5, 0)
+//         // 19 = callback(15, 3, 1 )
+//     }   
+//     return sum ;
+// }
+
+// let output = reduce(function(prev, element, index){
+//     return prev + element;
+// }, 10) ;
+
+// console.log(output)
+
+arr = [1,2,3];
+let res = arr.reduce((prev,element,index)=>{
+  return prev+element;
+});
+console.log(res);

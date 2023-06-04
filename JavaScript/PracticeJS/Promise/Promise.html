@@ -44,26 +44,86 @@
       // });
 
     
-     async function name(){
-      let prom = new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-          resolve("value");
-        },2000);
-      });
-      //  console.log(prom);
-      //  console.log(10);
-       return await prom;
-     };
+    //  async function name(){
+    //   let prom = new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //       resolve("value");
+    //     },2000);
+    //   });
+    //   //  console.log(prom);
+    //   //  console.log(10);
+    //    return await prom;
+    //  };
 
-     let prom1 = name();
-     console.log(prom1);
+    //  let prom1 = name();
+    //  console.log(prom1);
     
-     name().then(function(value){
-      console.log(value);
-     });
+    //  name().then(function(value){
+    //   console.log(value);
+    //  });
     //  name().catch((error)=>{
     //   console.log(error);
     //  })
+
+    //     const promise1 = new Promise((resolve, reject) => {
+    //   setTimeout(() => {
+    //     resolve('Promise 1 resolved');
+    //   }, 1000);
+    // });
+
+    // const promise2 = new Promise((resolve, reject) => {
+    //   setTimeout(() => {
+    //     reject('Promise 2 rejected');
+    //   }, 2000);
+    // });
+
+    // const promise3 = new Promise((resolve, reject) => {
+    //   setTimeout(() => {
+    //     resolve('Promise 3 resolved');
+    //   }, 1500);
+    // });
+
+    // let ar = [];
+    // let arr = Promise.allSettled([promise1, promise2, promise3])
+    //   .then(results => {
+    //     // console.log(results);
+    //     ar.push(results);
+    //     return ar;
+    //     /* Output:
+    //     [
+    //       { status: "fulfilled", value: "Promise 1 resolved" },
+    //       { status: "rejected", reason: "Promise 2 rejected" },
+    //       { status: "fulfilled", value: "Promise 3 resolved" }
+    //     ]
+    //     */
+    //   });
+    //   console.log(arr);
+    const promise1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject('Promise 1 rejected');
+  }, 1000);
+});
+
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject('Promise 2 resolved');
+  }, 2000);
+});
+
+const promise3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject('Promise 3 resolved');
+  }, 1500);
+});
+
+Promise.any([promise1, promise2, promise3])
+  .then(result => {
+    console.log(result); // Output: "Promise 2 resolved"
+  })
+  .catch(error => {
+    console.error(error); // This block will not be executed since at least one promise fulfilled
+  });
+
     </script>
   </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <p id="timer"></p>
+</body>
+<script>
+   
+    function updateTime(){
+        let container = document.getElementById("timer");
+        let date = new Date();
+        let curDate = date.toLocaleDateString();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let period = hours < 12 ? "AM" : "PM";
+
+        let formattedHour = hours <= 12 ? hours : hours % 12;
+        let formattedMinutes = minutes < 10 ? `0${minutes}` : minutes; 
+        let formattedSeconds = seconds < 10 ? `0${seconds}` : seconds; 
+
+        let time = `${formattedHour}:${formattedMinutes}:${formattedSeconds} ${period}`;
+
+        // console.log(`${formattedHour}:${formattedMinutes}:${formattedSeconds} ${period}`);
+        container.textContent = `${curDate}, ${time}`;
+    }
+    setInterval(updateTime,1000);
+</script>
+</html>
