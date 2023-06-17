@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add User Details</title>
+    <link rel="stylesheet" href="./addUser.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <h2 style="color:#FFFFFF;
+    ;">New Employees</h2>
+    <!-- User Details -->
+    <div class="userDetails">
+      <form id="userForm">
+        <div class="user-input">
+          <div>
+            <div><label for="name">Enter Name</label></div>
+            <div><input type="text" id="name"/></div>
+          </div>
+          <div>
+            <div>
+              <label for="profession">Enter Profession</label>
+            </div>
+            <div>
+              <input type="text" id="profession"/>
+            </div>
+        </div>
+          <div>
+            <div>
+              <label for="age">Enter Age</label>
+            </div>
+            <div>
+              <input type="number" id="age"/>
+            </div>
+        </div>
+    </div>
+        <input id="addUser" type="submit" value="Add User" />
+      </form>
+    </div>
+    <!-- Message Container -->
+    <div class="message-container">
+      <span></span>
+    </div>
+    <!-- Added Employees -->
+    <div class="addedEmployees">
+        <h3>Added Employees</h3>
+        <span id="addempSpan">You have 0 Employees</span>
+        <div id="appenduser">
+            <!-- <div class="emp-container">
+              <div class="emp-list">
+                  <div>1.</div>
+                  <div>Name:John</div>
+                  <div> Profession:Developer</div>
+                  <div>Age:22</div>
+              </div>
+              <div>
+                  <button class="delete-user">Delete User</button>
+              </div>      
+          </div> -->
+        </div>
+    </div>
+    <script src="./addUser.js"></script>
+  </body>
+</html>

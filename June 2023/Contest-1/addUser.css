@@ -1,0 +1,90 @@
+*{
+    font-family: 'Inter', sans-serif;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+body{
+    margin:0 30px;
+}
+
+/* User Container */
+.user-input{
+    display: flex;
+    flex-direction: row;
+    justify-content:stretch;
+    align-items: center;
+    gap: 50px;
+    font-size: larger;
+    width: 100%;
+}
+.user-input div{
+    width: 100%;
+}
+.user-input input{
+    width: 80%;
+    height: 22px;
+}
+label{
+    color: #FFFFFF;
+}
+input{
+    background-color:  #1E1E1E;
+    border: 1px solid #FFFFFF;
+}
+#addUser{
+    margin-top: 20px;
+    font-size: medium;
+    width:11%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color:#000000;
+    border: 1px solid black;
+}
+#addUser:hover{
+    cursor: pointer;
+}
+
+/* Message Container */
+.message-container{
+    margin-top: 10px;
+}
+.message-container #error{
+    color: #FF4343;
+}
+.message-container #success{
+    color: #43FF78;
+
+}
+/* Added Employee Container */
+.addedEmployees > span{
+    color : rgba(204, 200, 200, 0.5);
+    /* display: none; */
+}
+
+.emp-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.emp-list{
+    width:60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 0;
+    border: 1.5px solid #FFFFFF;
+    border-radius:10px
+}
+
+.delete-user{
+   padding: 10px;
+   font-size: medium;
+   border-radius: 10px;
+   color: #000000;
+   background-color: #FFFFFF;
+}
+.delete-user:hover{
+    cursor: pointer;
+}
