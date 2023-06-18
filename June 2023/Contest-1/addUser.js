@@ -94,6 +94,7 @@ function appendUsers(){
         
         appenduser.appendChild(emp_container);
     }
+    myForm.reset();
 }
 
 function deleteUser(id) {
